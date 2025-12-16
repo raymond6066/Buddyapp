@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name') }} | Handyman Services</title>
+    <title>Buddy Handyman | Demo</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -82,11 +82,8 @@
             box-shadow: 0 25px 60px rgba(26, 64, 112, 0.15);
         }
 
-        h1 {
-            font-size: clamp(28px, 4vw, 42px);
-            margin: 12px 0;
-            color: var(--text);
-        }
+        h1 { font-size: clamp(28px, 4vw, 42px); margin: 12px 0; color: var(--text); }
+        h2 { margin-top: 0; }
 
         p.lead {
             font-size: 18px;
@@ -185,7 +182,7 @@
     <div class="brand">
         <div class="brand-mark">BH</div>
         <div>
-            <div>{{ config('app.name') }}</div>
+            <div>Buddy Handyman</div>
             <small style="color: var(--muted); font-weight: 600;">Trusted local pros on demand</small>
         </div>
     </div>
@@ -196,12 +193,12 @@
     <div class="hero-card">
         <h1>Your reliable partner for repairs, installs, and upgrades.</h1>
         <p class="lead">
-            {{ config('app.name') }} keeps home and office projects on track with vetted experts, transparent pricing,
+            Buddy Handyman keeps home and office projects on track with vetted experts, transparent pricing,
             and instant scheduling. Showcase your services, capture leads, and dispatch the right pro in minutes.
         </p>
         <div class="cta-row">
             <a class="btn btn-primary" href="mailto:hello@buddy-handyman.test">Book a Pro</a>
-            <a class="btn btn-secondary" href="/demo.html">View static demo</a>
+            <a class="btn btn-secondary" href="#">This is a static preview</a>
         </div>
         <div class="pill">⚡ Same-week availability • ✅ Licensed & insured • 📍 Local crews</div>
     </div>
@@ -229,7 +226,7 @@
 
 <section class="hero">
     <div class="hero-card">
-        <h2 style="margin-top:0">From repo to production in three steps</h2>
+        <h2>From repo to production in three steps</h2>
         <div class="timeline">
             <div class="step">
                 <div class="number">1</div>
@@ -255,7 +252,7 @@
         </div>
     </div>
     <div class="hero-card">
-        <h2 style="margin-top:0">Stay on brand</h2>
+        <h2>Stay on brand</h2>
         <p class="lead">All starter links and logos have been replaced. Customize copy, colors, and assets to match your handyman business.</p>
         <div class="grid">
             <div class="card">
@@ -264,7 +261,7 @@
             </div>
             <div class="card">
                 <h3>Static GitHub demo</h3>
-                <p>Share <code>/demo.html</code> for stakeholders who want a preview without running PHP.</p>
+                <p>Share this file for stakeholders who want a preview without running PHP.</p>
             </div>
             <div class="card">
                 <h3>Built to extend</h3>
@@ -275,7 +272,8 @@
 </section>
 
 <footer>
-    © {{ now()->year }} {{ config('app.name') }} — Built for dependable, on-time handyman services.
+    © <span id="year"></span> Buddy Handyman — Built for dependable, on-time handyman services.
 </footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

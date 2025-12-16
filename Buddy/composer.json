@@ -1,9 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "buddy/handyman-app",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Buddy Handyman landing page and lead capture starter built on Laravel 6.",
     "keywords": [
-        "framework",
+        "handyman",
+        "services",
+        "lead-capture",
         "laravel"
     ],
     "license": "MIT",
