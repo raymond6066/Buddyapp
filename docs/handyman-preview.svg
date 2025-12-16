@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#edf2f7" offset="0"/>
+      <stop stop-color="#f7fafc" offset="0.45"/>
+      <stop stop-color="#ebf8ff" offset="1"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2b6cb0" offset="0"/>
+      <stop stop-color="#1a4d82" offset="1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10" y="-10" width="120%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1a4070" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <g transform="translate(60 90)" filter="url(#shadow)">
+    <rect width="520" height="320" rx="24" fill="white" stroke="#e2e8f0"/>
+    <rect x="30" y="36" width="88" height="14" rx="7" fill="#e6fffa"/>
+    <rect x="30" y="80" width="310" height="22" rx="11" fill="#1a4d82" opacity="0.12"/>
+    <rect x="30" y="110" width="260" height="18" rx="9" fill="#1a4d82" opacity="0.12"/>
+    <rect x="30" y="150" width="150" height="16" rx="8" fill="#2b6cb0" opacity="0.4"/>
+    <rect x="30" y="182" width="160" height="80" rx="16" fill="#ebf4ff" stroke="#cbd5e0"/>
+    <rect x="210" y="182" width="160" height="80" rx="16" fill="#fff7ed" stroke="#f6ad55" opacity="0.8"/>
+    <rect x="390" y="182" width="90" height="80" rx="16" fill="#e9d8fd" stroke="#805ad5" opacity="0.5"/>
+    <rect x="30" y="280" width="130" height="40" rx="12" fill="url(#brand)"/>
+    <rect x="180" y="280" width="120" height="40" rx="12" fill="#ffffff" stroke="#cbd5e0"/>
+  </g>
+  <g transform="translate(640 110)" filter="url(#shadow)">
+    <rect width="160" height="280" rx="28" fill="white" stroke="#e2e8f0"/>
+    <rect x="24" y="36" width="112" height="16" rx="8" fill="#1a4d82" opacity="0.2"/>
+    <rect x="24" y="70" width="90" height="14" rx="7" fill="#2b6cb0" opacity="0.5"/>
+    <rect x="24" y="104" width="112" height="60" rx="14" fill="#ebf4ff" stroke="#cbd5e0"/>
+    <rect x="24" y="182" width="112" height="60" rx="14" fill="#fff7ed" stroke="#f6ad55" opacity="0.8"/>
+    <rect x="34" y="258" width="92" height="14" rx="7" fill="url(#brand)"/>
+  </g>
+  <text x="60" y="60" font-family="'Inter', sans-serif" font-size="26" font-weight="700" fill="#1a202c">Buddy Handyman demo preview</text>
+  <text x="60" y="82" font-family="'Inter', sans-serif" font-size="16" fill="#4a5568">Static preview for GitHub and documentation</text>
+</svg>
